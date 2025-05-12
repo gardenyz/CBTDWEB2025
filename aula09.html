@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado Web 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Simulado Web 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#receita">Receita: Brownie</a></li>
+                <li><a href="#ingredientes">Ingredientes</a></li>
+                <li><a href="#formulario">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="receita">
+            <ol>
+                <li>Derreta a manteiga e reserve</li>
+                <li>Enquanto derrete a manteiga, misture os 3 ovos e a açúcar e misture bem</li>
+                <li>Acrescente a manteiga derretida no ovo e o açúcar</li>
+                <li>Agora é so misturar o achocolatado e o trigo</li>
+                <li>Unte uma forma com manteiga e achocolatado</li>
+                <li>Leve ao forno a 180° C por 30 minutos</li>
+            </ol>
+        </section>
+        <br><br>
+        <section id="ingredientes">
+            <table border>
+                <thead>
+                <tr>
+                    <th>Onde comprar?</th>
+                    <th>Ingrediente</th>
+                    <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Mercado</td>
+                        <td>Manteiga</td>
+                        <td>5 colheres</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate 50% cacau</td>
+                        <td>3 xícaras</td>
+                    </tr>
+                    <tr>
+                        <td>Farinha de Trigo</td>
+                        <td>12 colheres</td>
+                    </tr>
+                    <tr>
+                        <td>Ovos</td>
+                        <td>3 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>Açucar</td>
+                        <td>6 colheres</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br> <br>
+        <section id="formulario">
+            <form action="duvida.php">
+                <fieldset>
+                    <legend>Formulário de Dúvidas</legend>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    <br>
+
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" placeholder="Digite seu telefone" required>
+                    <br>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                    <br>
+
+                    <label for="indicacao">Como você chegou no nosso site?</label> <br>
+
+                    <input type="radio" name="indicacao" value="google"> Google <br>
+                    <input type="radio" name="indicacao" value="socias"> Redes Sociais <br>
+                    <input type="radio" name="indicacao" value="outro"> Indicação de outro usuário <br>  <br>
+
+                    <label for="duvida">Sua dúvida</label> <br>
+                    <textarea name="duvida" cols="20" rows="5" placeholder="Digite sua dúvida.." required></textarea>
+                    <br> <br>
+                    <input type="submit" value="ENVIAR">
+                </fieldset>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Renata Gardenia e Fernanda Cristina - ADS171 </p>
+    </footer>
+</body>
+
+</html>
